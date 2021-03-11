@@ -8,16 +8,25 @@
   <title>Document</title>
 </head>
 
-<body>
+<body onload="init()">
   <h1>Cancion 1</h1>
   <p>Al abrir el enlace sonaría asi
     <a href="#">click</a> bb
   </p>
   
-  <audio controls muted>
+  <audio controls>
     <source src="cancion.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
+
+  <script>
+    function init(){
+      var a = document.getElementsByTagName('audio')[0];
+      a.play();
+    }
+    
+
+  </script>
 </body>
 
 </html>
