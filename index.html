@@ -1,1 +1,50 @@
-<h1>Hola mundo</h1>
+<!DOCTYPE html>
+<html lang="ES_es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>music bingo</h1>
+    <audio controls id="audio">
+        
+    </audio>
+    <button id="play">Play</button>
+    <button id="pause">Pausa</button>
+    <input id="stopEachSong" type="checkbox"></input>
+    
+
+    <script>
+        (function(){
+            const songs = ["c1.mp3","c2.mp3","c3.mp3","c4.mp3","c5.mp3"];
+            let audio = document.getElementById("audio");
+            let play = document.getElementById("play");
+            let stopEachSong = document.getElementById("stopEachSong");
+
+            let currentSong = 0;
+
+            audio.src = "canciones/" + songs[0];
+
+            function next(){
+                if(currentSong === songs.length-1 ){
+                    currentSong = 0;
+                }else{
+                    currentSong++
+                }
+
+                audio.src = "canciones/" + songs[currentSong];
+                if(!stopEachSong.checked){
+                    audio.play();
+                }
+            }
+            
+            play.addEventListener("click",() => audio.play(),false);
+            pause.addEventListener("click",() => audio.pause());
+            audio.addEventListener("ended",next,false);
+
+        })()
+    </script>
+</body>
+</html>
