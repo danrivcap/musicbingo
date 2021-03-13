@@ -1,0 +1,66 @@
+{
+    "bombo 1": [
+        {
+            "src": "c1.mp3",
+            "titulo": "",
+            "autor":"",
+            "bola":""
+        },
+        {
+            "src": "c2.mp3",
+            "titulo": "",
+            "autor":"",
+            "bola":""
+        },
+        {
+            "src": "c3.mp3",
+            "titulo": "",
+            "autor":"",
+            "bola":""
+        },
+        {
+            "src": "c4.mp3",
+            "titulo": "",
+            "autor":"",
+            "bola":""
+        },
+        {
+            "src": "c5.mp3",
+            "titulo": "",
+            "autor":"",
+            "bola":""
+        }
+    ],
+    "bombo 2": [
+        {
+            "src": "c5.mp3",
+            "titulo": "",
+            "autor":"",
+            "bola":""
+        },
+        {
+            "src": "c4.mp3",
+            "titulo": "",
+            "autor":"",
+            "bola":""
+        },
+        {
+            "src": "c3.mp3",
+            "titulo": "",
+            "autor":"",
+            "bola":""
+        },
+        {
+            "src": "c2.mp3",
+            "titulo": "",
+            "autor":"",
+            "bola":""
+        },
+        {
+            "src": "c1.mp3",
+            "titulo": "",
+            "autor":"",
+            "bola":""
+        }
+    ]
+}
