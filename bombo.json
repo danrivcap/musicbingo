@@ -2,65 +2,65 @@
     "bombo 1": [
         {
             "src": "c1.mp3",
-            "titulo": "",
-            "autor":"",
-            "bola":""
+            "titulo": "Cancion 1",
+            "autor":"Autor 1",
+            "bola":"1"
         },
         {
             "src": "c2.mp3",
-            "titulo": "",
-            "autor":"",
-            "bola":""
+            "titulo": "Cancion 2",
+            "autor":"Autor 2",
+            "bola":"2"
         },
         {
             "src": "c3.mp3",
-            "titulo": "",
-            "autor":"",
-            "bola":""
+            "titulo": "Cancion 3",
+            "autor":"Autor 3",
+            "bola":"3"
         },
         {
             "src": "c4.mp3",
-            "titulo": "",
-            "autor":"",
-            "bola":""
+            "titulo": "Cancion 4",
+            "autor":"Autor 4",
+            "bola":"4"
         },
         {
             "src": "c5.mp3",
-            "titulo": "",
-            "autor":"",
-            "bola":""
+            "titulo": "Cancion 5",
+            "autor":"Autor 5",
+            "bola":"5"
         }
     ],
     "bombo 2": [
         {
             "src": "c5.mp3",
-            "titulo": "",
-            "autor":"",
-            "bola":""
+            "titulo": "Cancion 1",
+            "autor":"Autor 1",
+            "bola":"3"
         },
         {
             "src": "c4.mp3",
-            "titulo": "",
-            "autor":"",
-            "bola":""
+            "titulo": "Cancion 2",
+            "autor":"Autor 2",
+            "bola":"2"
         },
         {
             "src": "c3.mp3",
-            "titulo": "",
-            "autor":"",
-            "bola":""
+            "titulo": "Cancion 3",
+            "autor":"Autor 3",
+            "bola":"1"
         },
         {
             "src": "c2.mp3",
-            "titulo": "",
-            "autor":"",
-            "bola":""
+            "titulo": "Cancion 4",
+            "autor":"Autor 4",
+            "bola":"5"
         },
         {
             "src": "c1.mp3",
-            "titulo": "",
-            "autor":"",
-            "bola":""
+            "titulo": "Cancion 5",
+            "autor":"Autor 5",
+            "bola":"4"
         }
     ]
 }

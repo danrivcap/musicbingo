@@ -1,73 +1,131 @@
 <!DOCTYPE html>
 <html lang="es-ES">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>music bingo</h1>
-    <audio controls id="audio">
+    
+    <div class="config">
+        <h2>Configuración</h2>
+        <div class="control">
+            <input id="stopEachSong" type="checkbox"></input>
+            <label for="stopEachSong">Parar al final de cada canción</label>
+        </div>
+        <div class="control">
+            <label for="bombo">Bombo</label>
+            <select id="bombo">
+        </div>
+        </select>
+    </div>
+
+    <div class="waitAudio">
+        <h2>Sala de espera</h2>
+        <audio id="waitAudio">
+            Audio no soportado
+        </audio>
+        <button id="waitPlay">Play</button>
+        <button id="waitPause">Pausa</button>
+    </div>
+    
+    <div class="demoAudio">
+       <h2>Demo</h2>
+        <audio id="demoAudio">
+            Audio no soportado
+        </audio>
+        <button id="demoPlay">Play</button>
+        <button id="demoPause">Pausa</button>
+    </div>
+
+    <div class="mainAudio">
+        <h3>Juego principal</h3>
+        <audio controls id="audio">
+            Audio no soportado
+        </audio>
+        <button id="play">Play</button>
+        <button id="pause">Pausa</button>
+    </div>
+    
+    <div class="trackList" id="trackList">
         
-    </audio>
-    <button id="play">Play</button>
-    <button id="pause">Pausa</button>
-    <input id="stopEachSong" type="checkbox"></input>
-    <label for="stopEachSong">Parar al final de cada canción</label>
-    <label for="bombo">Bombo</label>
-    <select id="bombo">
-        <opt
-    </select>
+    </div>
 
     <script>
-        (function(){
-            
-            fetch('bombo.json')
-            .then(response => response.json())
-            .then(data => console.log(data));
-            
-            const songs = {
-                            "bombo 1":[
-                                {src:"c1.mp3"},
-                                {src:"c2.mp3"},
-                                {src:"c3.mp3"},
-                                {src:"c4.mp3"},
-                                {src:"c5.mp3"}],
-                            
-                          };
-            const bombos = Object.keys(songs);
-            
+        (function () {
+
+            let songs = {}
+            let bombos = []
+            let trackList = []
+            let bomboSelected = "";
+
             let audio = document.getElementById("audio");
             let play = document.getElementById("play");
             let stopEachSong = document.getElementById("stopEachSong");
             let bomboSelect = document.getElementById("bombo");
+            let trackListDiv = document.getElementById("trackList");
             let currentSong = 0;
 
-            bombos.forEach((elem, i, arr) => {
-                var option = document.createElement("option");
-                option.append(elem);
-                option.setAttribute("value",elem)
-                bomboSelect.append(option);
-            })
-
-            let bombo = bomboSelect.value;
-            audio.src = "canciones/" + songs[bombo][currentSong].src;
+            fetch('bombo.json')
+                .then(response => response.json())
+                .then(cargrarBombos);
 
 
+            function cargrarBombos(data) {
+                songs = data;
+                bombos = Object.keys(songs);
 
+                bombos.forEach((elem, i, arr) => {
+                    let option = document.createElement("option");
+                    option.append(elem);
+                    option.setAttribute("value", elem)
+                    bomboSelect.append(option);
+                })
+
+                bomboSelected = bomboSelect.value;
+                audio.src = "canciones/" + songs[bomboSelected][currentSong].src;
+                cargarTrackList();
+            }
+
+            function cargarTrackList(){
+                trackList = Array(songs[bomboSelected].length);
+                songs[bomboSelected].forEach((elem, i, arr) =>{
+                    let bola = elem.bola - 1;
+                    trackList[bola] = elem;
+                })
+
+                let ul = trackListDiv.getElementsByTagName("ul")[0];
+                if(ul != null){
+                    trackListDiv.removeChild(ul);
+                }
+                ul = document.createElement("ul");
+                trackList.forEach((elem, i, arr) => {
+                    let li = document.createElement("li");
+                    let span = document.createElement("span");
+                    span.textContent = elem.bola;
+                    li.append(span, " - " + elem.titulo + " - " + elem.autor);
+                    ul.append(li)
+                });
+                trackListDiv.append(ul);
+
+                console.log(trackList);
+            }
 
             /*
             * Pasa la siguiente canción, si llega a la última entonces vuelve a reproducir la primera
             */
-            function next(){
-                if(currentSong === songs[bombo].length-1 ){
+            function next() {
+                if (currentSong === songs[bombo].length - 1) {
                     currentSong = 0;
-                }else{
+                } else {
                     currentSong++;
                 }
 
                 audio.src = "canciones/" + songs[bombo][currentSong].src;
-                if(!stopEachSong.checked){
+                if (!stopEachSong.checked) {
                     audio.play();
                 }
             }
@@ -75,23 +133,25 @@
             /**
              * Cambia el juego de canciones y pone la primera canción de la lista.
             */
-            function cambiarBombo(){
-                bombo = bomboSelect.value;
+            function cambiarBombo() {
+                bomboSelected = bomboSelect.value;
                 currentSong = 0;
-                if(songs[bombo] != undefined){
+                if (songs[bombo] != undefined) {
                     audio.src = "canciones/" + songs[bombo][currentSong].src;
-                }else{
+                } else {
                     audio.src = "";
                 }
+                cargarTrackList();
 
             }
-            
-            play.addEventListener("click",() => audio.play(),false);
-            pause.addEventListener("click",() => audio.pause());
-            audio.addEventListener("ended",next,false);
-            bomboSelect.addEventListener("change",cambiarBombo,false);
+
+            play.addEventListener("click", () => audio.play(), false);
+            pause.addEventListener("click", () => audio.pause());
+            audio.addEventListener("ended", next, false);
+            bomboSelect.addEventListener("change", cambiarBombo, false);
 
         })()
     </script>
 </body>
+
 </html>
