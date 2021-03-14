@@ -29,9 +29,159 @@
             "titulo": "Cancion 5",
             "autor":"Autor 5",
             "bola":"5"
+        },{
+            "src": "c1.mp3",
+            "titulo": "Cancion 1",
+            "autor":"Autor 1",
+            "bola":"6"
+        },
+        {
+            "src": "c2.mp3",
+            "titulo": "Cancion 2",
+            "autor":"Autor 2",
+            "bola":"7"
+        },
+        {
+            "src": "c3.mp3",
+            "titulo": "Cancion 3",
+            "autor":"Autor 3",
+            "bola":"8"
+        },
+        {
+            "src": "c4.mp3",
+            "titulo": "Cancion 4",
+            "autor":"Autor 4",
+            "bola":"9"
+        },
+        {
+            "src": "c5.mp3",
+            "titulo": "Cancion 5",
+            "autor":"Autor 5",
+            "bola":"10"
+        },
+        {
+            "src": "c1.mp3",
+            "titulo": "Cancion 1",
+            "autor":"Autor 1",
+            "bola":"11"
+        },
+        {
+            "src": "c2.mp3",
+            "titulo": "Cancion 2",
+            "autor":"Autor 2",
+            "bola":"12"
+        },
+        {
+            "src": "c3.mp3",
+            "titulo": "Cancion 3",
+            "autor":"Autor 3",
+            "bola":"13"
+        },
+        {
+            "src": "c4.mp3",
+            "titulo": "Cancion 4",
+            "autor":"Autor 4",
+            "bola":"14"
+        },
+        {
+            "src": "c5.mp3",
+            "titulo": "Cancion 5",
+            "autor":"Autor 5",
+            "bola":"15"
+        },
+        {
+            "src": "c1.mp3",
+            "titulo": "Cancion 1",
+            "autor":"Autor 1",
+            "bola":"16"
+        },
+        {
+            "src": "c2.mp3",
+            "titulo": "Cancion 2",
+            "autor":"Autor 2",
+            "bola":"17"
+        },
+        {
+            "src": "c3.mp3",
+            "titulo": "Cancion 3",
+            "autor":"Autor 3",
+            "bola":"18"
+        },
+        {
+            "src": "c4.mp3",
+            "titulo": "Cancion 4",
+            "autor":"Autor 4",
+            "bola":"19"
+        },
+        {
+            "src": "c5.mp3",
+            "titulo": "Cancion 5",
+            "autor":"Autor 5",
+            "bola":"20"
+        },
+        {
+            "src": "c1.mp3",
+            "titulo": "Cancion 1",
+            "autor":"Autor 1",
+            "bola":"21"
+        },
+        {
+            "src": "c2.mp3",
+            "titulo": "Cancion 2",
+            "autor":"Autor 2",
+            "bola":"22"
+        },
+        {
+            "src": "c3.mp3",
+            "titulo": "Cancion 3",
+            "autor":"Autor 3",
+            "bola":"23"
+        },
+        {
+            "src": "c4.mp3",
+            "titulo": "Cancion 4",
+            "autor":"Autor 4",
+            "bola":"24"
+        },
+        {
+            "src": "c5.mp3",
+            "titulo": "Cancion 5",
+            "autor":"Autor 5",
+            "bola":"25"
+        },
+        {
+            "src": "c1.mp3",
+            "titulo": "Cancion 1",
+            "autor":"Autor 1",
+            "bola":"26"
+        },
+        {
+            "src": "c2.mp3",
+            "titulo": "Cancion 2",
+            "autor":"Autor 2",
+            "bola":"27"
+        },
+        {
+            "src": "c3.mp3",
+            "titulo": "Cancion 3",
+            "autor":"Autor 3",
+            "bola":"28"
+        },
+        {
+            "src": "c4.mp3",
+            "titulo": "Cancion 4",
+            "autor":"Autor 4",
+            "bola":"29"
+        },
+        {
+            "src": "c5.mp3",
+            "titulo": "Cancion 5",
+            "autor":"Autor 5",
+            "bola":"30"
         }
+
     ],
-    "bombo 2": [
+    "DemoS": [
         {
             "src": "c5.mp3",
             "titulo": "Cancion 1",

@@ -37,7 +37,7 @@
 
         .jukebox {
             width: 50vw;
-            height: 50vh;
+            height: 60vh;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -58,6 +58,23 @@
             margin-left: auto;
             margin-right: auto;
             text-align: center;
+        }
+
+        .spin {
+            animation-name: spin;
+            animation-duration: 5000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         .innerheader {
@@ -95,8 +112,8 @@
 
         .main {
             display: grid;
-            grid-gap: 10%;
-            grid-column-gap: 30%;
+            grid-row-gap: 3%;
+            grid-column-gap: 3%;
         }
 
         .waitaudio {
@@ -104,30 +121,30 @@
             grid-row: 1;
         }
 
-        .demoAudio {
-            grid-column: 1;
-            grid-row: 2;
-        }
-
         .mainAudio {
-            grid-column: 1;
-            grid-row: 3;
-        }
-
-        .trackList {
-            grid-column: 2;
-            grid-row-start: 1;
-            grid-row-end: 3;
+            grid-column: 3;
+            grid-row: 1;
         }
 
         .config {
             grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row: 4;
+            grid-column-end: 3;
+            grid-row: 2;
         }
 
-        .control {
-            margin: 3%;
+        .trackList10 {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        .trackList20 {
+            grid-column: 2;
+            grid-row: 3;
+        }
+
+        .trackList30 {
+            grid-column: 3;
+            grid-row: 3;
         }
     </style>
 </head>
@@ -148,23 +165,14 @@
                 <div class="seccion waitAudio">
                     <h2>Sala de espera</h2>
                     <audio id="waitAudio">
-                        Audio no soportado
+                        <source src="canciones/wait.mp3" type="audio/mp3">
                     </audio>
                     <button class="play" id="waitPlay">Play</button>
                     <button class="pause" disabled id="waitPause">Pausa</button>
                 </div>
 
-                <div class="seccion demoAudio">
-                    <h2>Demo</h2>
-                    <audio id="demoAudio">
-                        Audio no soportado
-                    </audio>
-                    <button class="play" id="demoPlay">Play</button>
-                    <button class="pause" disabled id="demoPause">Pausa</button>
-                </div>
-
                 <div class="seccion mainAudio">
-                    <h3>Juego principal</h3>
+                    <h2>Juego principal</h2>
                     <audio id="audio">
                         Audio no soportado
                     </audio>
@@ -172,7 +180,15 @@
                     <button class="pause" disabled id="pause">Pausa</button>
                 </div>
 
-                <div class="seccion trackList" id="trackList">
+                <div class="seccion trackList10" id="trackList10">
+
+                </div>
+
+                <div class="seccion trackList20" id="trackList20">
+
+                </div>
+
+                <div class="seccion trackList30" id="trackList30">
 
                 </div>
 
@@ -204,10 +220,24 @@
             let bomboSelected = "";
 
             let audio = document.getElementById("audio");
+            let waitAudio = document.getElementById("waitAudio")
+
+
             let play = document.getElementById("play");
+            let waitPlay = document.getElementById("waitPlay");
+
+
+            let pause = document.getElementById("pause");
+            let waitPause = document.getElementById("waitPause");
+
+
             let stopEachSong = document.getElementById("stopEachSong");
             let bomboSelect = document.getElementById("bombo");
-            let trackListDiv = document.getElementById("trackList");
+            let trackList10 = document.getElementById("trackList10");
+            let trackList20 = document.getElementById("trackList20");
+            let trackList30 = document.getElementById("trackList30");
+            let vinilo = document.getElementsByClassName("outerheader")[0];
+
             let currentSong = 0;
 
             fetch('bombo.json')
@@ -238,34 +268,55 @@
                     trackList[bola] = elem;
                 })
 
-                let ul = trackListDiv.getElementsByTagName("ul")[0];
-                if (ul != null) {
-                    trackListDiv.removeChild(ul);
+                let ul10 = trackList10.getElementsByTagName("ul")[0];
+                if (ul10 != null) {
+                    trackList10.removeChild(ul10);
                 }
-                ul = document.createElement("ul");
+                ul10 = document.createElement("ul");
+
+                let ul20 = trackList20.getElementsByTagName("ul")[0];
+                if (ul20 != null) {
+                    trackList20.removeChild(ul20);
+                }
+                ul20 = document.createElement("ul");
+
+                let ul30 = trackList30.getElementsByTagName("ul")[0];
+                if (ul30 != null) {
+                    trackList30.removeChild(ul30);
+                }
+                ul30 = document.createElement("ul");
+
+
                 trackList.forEach((elem, i, arr) => {
                     let li = document.createElement("li");
                     let span = document.createElement("span");
                     span.textContent = elem.bola;
                     li.append(span, " - " + elem.titulo + " - " + elem.autor);
-                    ul.append(li)
-                });
-                trackListDiv.append(ul);
+                    if (i >= 0 && i <= 9) {
+                        ul10.append(li)
+                    } else if (i >= 10 && i <= 19) {
+                        ul20.append(li)
+                    } else {
+                        ul30.append(li)
+                    }
 
-                console.log(trackList);
+                });
+                trackList10.append(ul10);
+                trackList20.append(ul20);
+                trackList30.append(ul30);
             }
 
             /*
             * Pasa la siguiente canción, si llega a la última entonces vuelve a reproducir la primera
             */
             function next() {
-                if (currentSong === songs[bombo].length - 1) {
+                if (currentSong === songs[bomboSelected].length - 1) {
                     currentSong = 0;
                 } else {
                     currentSong++;
                 }
 
-                audio.src = "canciones/" + songs[bombo][currentSong].src;
+                audio.src = "canciones/" + songs[bomboSelected][currentSong].src;
                 if (!stopEachSong.checked) {
                     audio.play();
                 }
@@ -277,8 +328,8 @@
             function cambiarBombo() {
                 bomboSelected = bomboSelect.value;
                 currentSong = 0;
-                if (songs[bombo] != undefined) {
-                    audio.src = "canciones/" + songs[bombo][currentSong].src;
+                if (songs[bomboSelected] != undefined) {
+                    audio.src = "canciones/" + songs[bomboSelected][currentSong].src;
                 } else {
                     audio.src = "";
                 }
@@ -287,9 +338,57 @@
             }
 
             play.addEventListener("click", () => audio.play(), false);
-            pause.addEventListener("click", () => audio.pause());
+            pause.addEventListener("click", () => audio.pause(), false);
+
+            audio.addEventListener("playing", () => {
+                play.setAttribute("disabled", "disabled")
+                pause.removeAttribute("disabled")
+                waitPlay.setAttribute("disabled", "disabled")
+
+                vinilo.classList.add("spin")
+
+            }, false)
+
+            audio.addEventListener("pause", () => {
+                pause.setAttribute("disabled", "disabled")
+                play.removeAttribute("disabled")
+                waitPlay.removeAttribute("disabled")
+
+                vinilo.classList.remove("spin")
+
+            }, false)
+
+
             audio.addEventListener("ended", next, false);
+            
             bomboSelect.addEventListener("change", cambiarBombo, false);
+            
+            
+            waitPlay.addEventListener("click", () => waitAudio.play(), false);
+            waitPause.addEventListener("click", () => waitAudio.pause(), false);
+
+
+            waitAudio.addEventListener("ended", () => waitAudio.play(), false);
+
+
+            waitAudio.addEventListener("playing", () => {
+                waitPlay.setAttribute("disabled", "disabled")
+                waitPause.removeAttribute("disabled")
+                play.setAttribute("disabled", "disabled")
+
+                vinilo.classList.add("spin")
+
+            }, false)
+
+            waitAudio.addEventListener("pause", () => {
+                waitPause.setAttribute("disabled", "disabled")
+                waitPlay.removeAttribute("disabled")
+                play.removeAttribute("disabled")
+
+                vinilo.classList.remove("spin")
+
+            }, false)
+
 
         })()
     </script>
