@@ -5,54 +5,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+
+            background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+            background-size: 1800% 1800%;
+            animation: rainbow 18s ease infinite;
+        }
+
+        @keyframes rainbow {
+            0% {
+                background-position: 0% 82%
+            }
+
+            50% {
+                background-position: 100% 19%
+            }
+
+            100% {
+                background-position: 0% 82%
+            }
+        }
+
+
+        .jukebox {
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: aliceblue;
+        }
+
+        .outerheader {
+            background: rgb(1, 1, 1);
+            background: linear-gradient(90deg, rgba(1, 1, 1, 1) 0%, rgba(186, 186, 186, 1) 50%, rgba(0, 0, 0, 1) 100%);
+            border-radius: 50%;
+            height: 250px;
+            width: 250px;
+            position: absolute;
+            top: -125px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .innerheader {
+            background-color: aliceblue;
+            border-radius: 50%;
+            height: 130px;
+            width: 130px;
+            top: 60px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .outerheader h1 {
+            padding: 20% 0;
+        }
+
+        .main {
+            padding-top: 15%;
+            padding-left: 5%;
+        }
+
+        .play {
+            padding: 1%;
+            background-color: greenyellow;
+        }
+
+        .pause {
+            padding: 1%;
+            background-color: pink;
+        }
+
+        .main {
+            display: grid;
+            grid-gap: 10%;
+            grid-column-gap: 30%;
+        }
+
+        .waitaudio {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .demoAudio {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .mainAudio {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        .trackList {
+            grid-column: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .config {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row: 4;
+        }
+
+        .control {
+            margin: 3%;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>music bingo</h1>
-    
-    <div class="config">
-        <h2>Configuración</h2>
-        <div class="control">
-            <input id="stopEachSong" type="checkbox"></input>
-            <label for="stopEachSong">Parar al final de cada canción</label>
+    <div class="container">
+        <div class="jukebox">
+            <header>
+                <div class="outerheader">
+                    <div class="innerheader">
+                        <h1>Music Bingo</h1>
+                    </div>
+                </div>
+            </header>
+
+            <div class="main">
+
+                <div class="seccion waitAudio">
+                    <h2>Sala de espera</h2>
+                    <audio id="waitAudio">
+                        Audio no soportado
+                    </audio>
+                    <button class="play" id="waitPlay">Play</button>
+                    <button class="pause" disabled id="waitPause">Pausa</button>
+                </div>
+
+                <div class="seccion demoAudio">
+                    <h2>Demo</h2>
+                    <audio id="demoAudio">
+                        Audio no soportado
+                    </audio>
+                    <button class="play" id="demoPlay">Play</button>
+                    <button class="pause" disabled id="demoPause">Pausa</button>
+                </div>
+
+                <div class="seccion mainAudio">
+                    <h3>Juego principal</h3>
+                    <audio id="audio">
+                        Audio no soportado
+                    </audio>
+                    <button class="play" id="play">Play</button>
+                    <button class="pause" disabled id="pause">Pausa</button>
+                </div>
+
+                <div class="seccion trackList" id="trackList">
+
+                </div>
+
+                <div class="seccion config">
+                    <h2>Configuración</h2>
+                    <div class="control">
+                        <input id="stopEachSong" type="checkbox"></input>
+                        <label for="stopEachSong">Parar al final de cada canción</label>
+                    </div>
+                    <div class="control">
+                        <label for="bombo">Bombo</label>
+                        <select id="bombo">
+                    </div>
+                    </select>
+                </div>
+
+            </div>
         </div>
-        <div class="control">
-            <label for="bombo">Bombo</label>
-            <select id="bombo">
-        </div>
-        </select>
     </div>
 
-    <div class="waitAudio">
-        <h2>Sala de espera</h2>
-        <audio id="waitAudio">
-            Audio no soportado
-        </audio>
-        <button id="waitPlay">Play</button>
-        <button id="waitPause">Pausa</button>
-    </div>
-    
-    <div class="demoAudio">
-       <h2>Demo</h2>
-        <audio id="demoAudio">
-            Audio no soportado
-        </audio>
-        <button id="demoPlay">Play</button>
-        <button id="demoPause">Pausa</button>
-    </div>
 
-    <div class="mainAudio">
-        <h3>Juego principal</h3>
-        <audio controls id="audio">
-            Audio no soportado
-        </audio>
-        <button id="play">Play</button>
-        <button id="pause">Pausa</button>
-    </div>
-    
-    <div class="trackList" id="trackList">
-        
-    </div>
 
     <script>
         (function () {
@@ -90,15 +231,15 @@
                 cargarTrackList();
             }
 
-            function cargarTrackList(){
+            function cargarTrackList() {
                 trackList = Array(songs[bomboSelected].length);
-                songs[bomboSelected].forEach((elem, i, arr) =>{
+                songs[bomboSelected].forEach((elem, i, arr) => {
                     let bola = elem.bola - 1;
                     trackList[bola] = elem;
                 })
 
                 let ul = trackListDiv.getElementsByTagName("ul")[0];
-                if(ul != null){
+                if (ul != null) {
                     trackListDiv.removeChild(ul);
                 }
                 ul = document.createElement("ul");
