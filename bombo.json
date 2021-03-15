@@ -184,8 +184,8 @@
     "DemoS": [
         {
             "src": "c5.mp3",
-            "titulo": "Cancion 1",
-            "autor":"Autor 1",
+            "titulo": "Wait and bleed",
+            "autor":"Slipknot",
             "bola":"3"
         },
         {
@@ -196,8 +196,8 @@
         },
         {
             "src": "c3.mp3",
-            "titulo": "Cancion 3",
-            "autor":"Autor 3",
+            "titulo": "Cantame",
+            "autor":"María del monte",
             "bola":"1"
         },
         {
@@ -208,8 +208,8 @@
         },
         {
             "src": "c1.mp3",
-            "titulo": "Cancion 5",
-            "autor":"Autor 5",
+            "titulo": "Hello",
+            "autor":"Beyonce",
             "bola":"4"
         }
     ]
