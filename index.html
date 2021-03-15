@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Music Bingo</title>
     <style>
         * {
             margin: 0;
@@ -36,8 +36,8 @@
 
 
         .jukebox {
-            width: 50vw;
-            height: 60vh;
+            width: 55%;
+            height: 65%;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -65,6 +65,16 @@
             animation-duration: 5000ms;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
+        }
+
+        .roundedBall {
+            width: 17px;
+            height: 17px;
+            border: 1px solid black;
+            display: inline-block;
+            border-radius: 50%;
+            padding: 3px;
+            text-align: center;
         }
 
         @keyframes spin {
@@ -98,6 +108,7 @@
         .main {
             padding-top: 15%;
             padding-left: 5%;
+            padding-right: 5%;
         }
 
         .play {
@@ -146,6 +157,25 @@
             grid-column: 3;
             grid-row: 3;
         }
+
+        .seccion ul li {
+            list-style: none;
+            margin-top: 6px;
+        }
+        .roundedBall {
+            width: 17px;
+            height: 17px;
+            border: 1px solid black;
+            display: block;
+            border-radius: 50%;
+            padding: 3px;
+            text-align: center;
+            background-color: wheat;
+            float: right;
+        }
+
+        
+
     </style>
 </head>
 
@@ -291,7 +321,8 @@
                     let li = document.createElement("li");
                     let span = document.createElement("span");
                     span.textContent = elem.bola;
-                    li.append(span, " - " + elem.titulo + " - " + elem.autor);
+                    span.classList.add("roundedBall")
+                    li.append(elem.titulo + " - " + elem.autor + " ", span);
                     if (i >= 0 && i <= 9) {
                         ul10.append(li)
                     } else if (i >= 10 && i <= 19) {
@@ -360,10 +391,10 @@
 
 
             audio.addEventListener("ended", next, false);
-            
+
             bomboSelect.addEventListener("change", cambiarBombo, false);
-            
-            
+
+
             waitPlay.addEventListener("click", () => waitAudio.play(), false);
             waitPause.addEventListener("click", () => waitAudio.pause(), false);
 
