@@ -1,0 +1,18 @@
+[
+    {
+        "src": "canalla.mp3",
+        "titulo": "Canalla",
+        "autor": "Romeo Santos",
+        "bola": "1"
+    },{
+        "src": "pisando_fuerte.mp3",
+        "titulo": "Pisando fuerte",
+        "autor": "Alejandro Sanz",
+        "bola": "2"
+    },{
+        "src": "asereje.mp3",
+        "titulo": "Asereje",
+        "autor": "Las ketpchu",
+        "bola": "3"
+    },
+]

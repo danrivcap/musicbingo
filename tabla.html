@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leyenda</title>
+
+    <style>
+        table{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <h1>Leyenda</h1>
+
+</div>
+
+<script>
+
+(function(){
+    fetch('bombo.json')
+                .then(response => response.json())
+                .then(cargarTablas);
+
+    let main = document.getElementById("main")
+
+    function cargarTablas(data){
+        let songs = data
+        let bombos = Object.keys(songs);
+        bombos.forEach((elem, i, arr) => {
+            let h2 = document.createElement("h2");
+            h2.textContent=elem;
+            main.append(h2);
+
+            let table = document.createElement("table");
+            let tCabecera = document.createElement("tr")
+           
+            let thCuenta = document.createElement("th");
+            thCuenta.textContent = "#"
+            let thTitulo = document.createElement("th");
+            thTitulo.textContent = "Titulo"
+            let thAutor = document.createElement("th");
+            thAutor.textContent = "Autor"
+            let thCancion = document.createElement("th");
+            thCancion.textContent = "Cancion"
+            let thBola = document.createElement("th");
+            thBola.textContent = "Bola"
+            tCabecera.append(thCuenta)
+            tCabecera.append(thTitulo)
+            tCabecera.append(thAutor)
+            tCabecera.append(thCancion)
+            tCabecera.append(thBola)
+     
+
+            table.append(tCabecera);
+
+            data[elem].forEach((elem,i,arr) => {
+                let tRow = document.createElement("tr")
+                
+                let tdCuenta = document.createElement("td");
+                tdCuenta.textContent = i+1;
+
+                let tdTitulo = document.createElement("td");
+                tdTitulo.textContent = elem.titulo;
+                
+                let tdAutor = document.createElement("td");
+                tdAutor.textContent = elem.autor;
+                
+                let tdCancion = document.createElement("td");
+                tdCancion.textContent = elem.src;
+                
+                let tdBola = document.createElement("td");
+                tdBola.textContent = elem.bola;
+            
+
+                tRow.append(tdCuenta);
+                tRow.append(tdTitulo);
+                tRow.append(tdAutor);
+                tRow.append(tdCancion);
+                tRow.append(tdBola);
+
+                table.append(tRow);
+
+            } )
+
+            main.append(table)
+
+        })
+
+    }
+})()
+
+</script>
+</body>
+</html>

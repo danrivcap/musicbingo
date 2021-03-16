@@ -111,6 +111,11 @@
             background-color: pink;
         }
 
+        .next {
+            padding: 1%;
+            background-color:cornflowerblue
+        }
+
         .main {
             display: grid;
             grid-row-gap: 3%;
@@ -198,6 +203,8 @@
                     </audio>
                     <button class="play" id="play">Play</button>
                     <button class="pause" disabled id="pause">Pausa</button>
+                    <button class="next" id="next">Next</button>
+                    <span class="cancion"></span> de <span class="total"></span>
                 </div>
 
                 <div class="seccion trackList10" id="trackList10">
@@ -250,6 +257,7 @@
             let pause = document.getElementById("pause");
             let waitPause = document.getElementById("waitPause");
 
+            let nextBtn = document.getElementById("next");
 
             let stopEachSong = document.getElementById("stopEachSong");
             let bomboSelect = document.getElementById("bombo");
@@ -257,6 +265,9 @@
             let trackList20 = document.getElementById("trackList20");
             let trackList30 = document.getElementById("trackList30");
             let vinilo = document.getElementsByClassName("outerheader")[0];
+
+            let cancion = document.getElementsByClassName("cancion")[0];
+            let total = document.getElementsByClassName("total")[0];
 
             let currentSong = 0;
 
@@ -325,12 +336,17 @@
                 trackList10.append(ul10);
                 trackList20.append(ul20);
                 trackList30.append(ul30);
+
+                cancion.textContent = currentSong + 1;
+                total.textContent = songs[bomboSelected].length;
+
             }
 
             /*
             * Pasa la siguiente canción, si llega a la última entonces vuelve a reproducir la primera
             */
             function next() {
+            
                 if (currentSong === songs[bomboSelected].length - 1) {
                     currentSong = 0;
                 } else {
@@ -367,6 +383,8 @@
                 waitPlay.setAttribute("disabled", "disabled")
 
                 vinilo.classList.add("spin")
+
+                cancion.textContent = currentSong + 1;
 
             }, false)
 
@@ -409,6 +427,8 @@
                 vinilo.classList.remove("spin")
 
             }, false)
+
+            nextBtn.addEventListener("click",next,false);
 
 
         })()

@@ -1,0 +1,26 @@
+[
+    {
+        "src": "my_head_and_my_heart.mp3",
+        "titulo": "My head and my heart",
+        "autor": "Ava Max",
+        "bola": "1"
+    },
+    {
+        "src": "lambada.mp3",
+        "titulo": "Lambada",
+        "autor": "Kaoma",
+        "bola": "2"
+    },
+    {
+        "src": "still_loving_you.mp3",
+        "titulo": "Still loving you",
+        "autor": "Scorpions",
+        "bola": "3"
+    },
+    {
+        "src": "bring_me_to_life.mp3",
+        "titulo": "Bring me to life",
+        "autor": "Evanescence",
+        "bola": "4"
+    }
+]
