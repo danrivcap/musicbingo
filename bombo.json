@@ -1455,35 +1455,35 @@
         }
 
     ],
-    "DemoS": [
+    "Demo": [
         {
-            "src": "c5.mp3",
-            "titulo": "Wait and bleed",
-            "autor":"Slipknot",
+            "src": "blur-song_2",
+            "titulo": "Song 2",
+            "autor":"Blur",
             "bola":"3"
         },
         {
-            "src": "c4.mp3",
-            "titulo": "Cancion 2",
-            "autor":"Autor 2",
+            "src": "ellie_goulding-love_me_like_you_do.mp3",
+            "titulo": "Love me like you do",
+            "autor":"Ellie Goulding",
             "bola":"2"
         },
         {
-            "src": "c3.mp3",
-            "titulo": "Cantame",
-            "autor":"María del monte",
+            "src": "only_happy_when_it_rains.mp3",
+            "titulo": "Only happy when it rains",
+            "autor":"Garbage",
             "bola":"1"
         },
         {
-            "src": "c2.mp3",
-            "titulo": "Cancion 4",
-            "autor":"Autor 4",
+            "src": "no_doubt-dont_speak.mp3",
+            "titulo": "Dont speak",
+            "autor":"No Doubt",
             "bola":"5"
         },
         {
-            "src": "c1.mp3",
-            "titulo": "Hello",
-            "autor":"Beyonce",
+            "src": "the_cardigans-my_favourite_game.mp3",
+            "titulo": "My favourite game",
+            "autor":"The cardigans",
             "bola":"4"
         }
     ]
