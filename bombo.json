@@ -1,4 +1,36 @@
 {
+    "Demo": [
+        {
+            "src": "blur-song_2.mp3",
+            "titulo": "Song 2",
+            "autor":"Blur",
+            "bola":"3"
+        },
+        {
+            "src": "ellie_goulding-love_me_like_you_do.mp3",
+            "titulo": "Love me like you do",
+            "autor":"Ellie Goulding",
+            "bola":"2"
+        },
+        {
+            "src": "only_happy_when_it_rains.mp3",
+            "titulo": "Only happy when it rains",
+            "autor":"Garbage",
+            "bola":"1"
+        },
+        {
+            "src": "no_doubt-dont_speak.mp3",
+            "titulo": "Dont speak",
+            "autor":"No Doubt",
+            "bola":"5"
+        },
+        {
+            "src": "the_cardigans-my_favourite_game.mp3",
+            "titulo": "My favourite game",
+            "autor":"The cardigans",
+            "bola":"4"
+        }
+    ],
     "bombo 1": [
         {
             "src": "my_head_and_my_heart.mp3",
@@ -1454,37 +1486,5 @@
             "bola":"30"
         }
 
-    ],
-    "Demo": [
-        {
-            "src": "blur-song_2",
-            "titulo": "Song 2",
-            "autor":"Blur",
-            "bola":"3"
-        },
-        {
-            "src": "ellie_goulding-love_me_like_you_do.mp3",
-            "titulo": "Love me like you do",
-            "autor":"Ellie Goulding",
-            "bola":"2"
-        },
-        {
-            "src": "only_happy_when_it_rains.mp3",
-            "titulo": "Only happy when it rains",
-            "autor":"Garbage",
-            "bola":"1"
-        },
-        {
-            "src": "no_doubt-dont_speak.mp3",
-            "titulo": "Dont speak",
-            "autor":"No Doubt",
-            "bola":"5"
-        },
-        {
-            "src": "the_cardigans-my_favourite_game.mp3",
-            "titulo": "My favourite game",
-            "autor":"The cardigans",
-            "bola":"4"
-        }
     ]
 }
