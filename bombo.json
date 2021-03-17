@@ -1091,6 +1091,370 @@
         }
 
     ],
+	"bombo 7": [
+        {
+            "src": "my_head_and_my_heart.mp3",
+            "titulo": "My head and my heart",
+            "autor":"Ava Max",
+            "bola":"13"
+        },
+        {
+            "src": "bring_me_to_life.mp3",
+            "titulo": "Bring me to life",
+            "autor":"Evanescence",
+            "bola":"22"
+        },
+        {
+            "src": "cantame.mp3",
+            "titulo": "Cantame",
+            "autor":"Maria del Monte",
+            "bola":"15"
+        },
+        {
+            "src": "i_want_to_break_free.mp3",
+            "titulo": "I want to break free",
+            "autor":"Queen",
+            "bola":"2"
+        },
+        {
+            "src": "wannabe.mp3",
+            "titulo": "Wannabe",
+            "autor":"Spice girls",
+            "bola":"5"
+        },{
+            "src": "como_una_ola.mp3",
+            "titulo": "Como una ola",
+            "autor":"Rocío Jurado",
+            "bola":"1"
+        },
+        {
+            "src": "fascination_street.mp3",
+            "titulo": "Fascination Street",
+            "autor":"The Cure",
+            "bola":"10"
+        },
+        {
+            "src": "enjoy_the_silence.mp3",
+            "titulo": "Enjoy The Silence",
+            "autor":"Depeche Mode",
+            "bola":"28"
+        },
+        {
+            "src": "carita_de_inocente.mp3",
+            "titulo": "Carita de Inocente",
+            "autor":"Prince Royce",
+            "bola":"24"
+        },
+        {
+            "src": "roundabout.mp3",
+            "titulo": "Roundabout",
+            "autor":"YES",
+            "bola":"23"
+        },
+        {
+            "src": "caperucita.mp3",
+            "titulo": "Caperucita",
+            "autor":"Murfila",
+            "bola":"25"
+        },
+        {
+            "src": "losing_my_religion.mp3",
+            "titulo": "Losing my religion",
+            "autor":"REM",
+            "bola":"8"
+        },
+        {
+            "src": stan.mp3",
+            "titulo": "Stan",
+            "autor":"Eminem",
+            "bola":"6"
+        },
+        {
+            "src": "hellway_to_hell.mp3",
+            "titulo": "Hellway to hell",
+            "autor":"AC DC",
+            "bola":"19"
+        },
+        {
+            "src": "call_me_maybe.mp3",
+            "titulo": "Call me maybe",
+            "autor":"Carly Rae Jepsen",
+            "bola":"27"
+        },
+        {
+            "src": "counting_stars.mp3",
+            "titulo": "Counting stars",
+            "autor":"Onerepublic",
+            "bola":"12"
+        },
+        {
+            "src": "habits_stay_high.mp3",
+            "titulo": "Habits (stay high)",
+            "autor":"Tove lo",
+            "bola":"14"
+        },
+        {
+            "src": "no_mas.mp3",
+            "titulo": "No mas",
+            "autor":"El chojin",
+            "bola":"30"
+        },
+        {
+            "src": "esa_chupa_tan_fea.mp3",
+            "titulo": "Esa chupa tan fea",
+            "autor":"Frank T",
+            "bola":"7"
+        },
+        {
+            "src": "rendemtpion_song.mp3",
+            "titulo": "Rendemtpion song",
+            "autor":"Bob Marley",
+            "bola":"21"
+        },
+        {
+            "src": "so_payaso.mp3",
+            "titulo": "So payaso",
+            "autor":"Extremoduro",
+            "bola":"18"
+        },
+        {
+            "src": "la_flaca.mp3",
+            "titulo": "La flaca",
+            "autor":"Jarabe de Palo",
+            "bola":"9"
+        },
+        {
+            "src": "mi_carro.mp3",
+            "titulo": "Mi carro",
+            "autor":"Manolo Escobar",
+            "bola":"17"
+        },
+        {
+            "src": "eye_in_the_sky.mp3",
+            "titulo": "Eye in the Sky",
+            "autor":"The Alan Parsons Project",
+            "bola":"4"
+        },
+        {
+            "src": "i_dont_want_to_miss_a_thing.mp3",
+            "titulo": "I don't want to miss a thing",
+            "autor":"Aerosmith",
+            "bola":"29"
+        },
+        {
+            "src": "chiquilla.mp3",
+            "titulo": "Chiquilla",
+            "autor":"Seguridad Social",
+            "bola":"16"
+        },
+        {
+            "src": "voy_a_pasarmelo_bien.mp3",
+            "titulo": "Voy a pasármelo bien",
+            "autor":"Hombres G",
+            "bola":"20"
+        },
+        {
+            "src": "all_star.mp3",
+            "titulo": "All star",
+            "autor":"Smash mouth",
+            "bola":"3"
+        },
+        {
+            "src": "bailar_pegados.mp3",
+            "titulo": "Bailar Pegados",
+            "autor":"Sergio Dalma",
+            "bola":"11"
+        },
+        {
+            "src": "son_ilusiones.mp3",
+            "titulo": "Son ilusiones",
+            "autor":"Los chichos",
+            "bola":"26"
+        }
+
+    ],
+	"bombo 8": [
+        {
+            "src": "tu_jardin_con_enanitos.mp3",
+            "titulo": "Tu jardin con enanitos",
+            "autor":"Melendi",
+            "bola":"24"
+        },
+        {
+            "src": "man_i_feel_like_a_woman.mp3",
+            "titulo": "Man! I feel like a woman!",
+            "autor":"Shania Twain",
+            "bola":"19"
+        },
+        {
+            "src": "love_me_again.mp3",
+            "titulo": "Love me again",
+            "autor":"John Newman",
+            "bola":"26"
+        },
+        {
+            "src": "marinero_de_luces.mp3",
+            "titulo": "Marinero de luces",
+            "autor":"Isabel Pantoja",
+            "bola":"22"
+        },
+        {
+            "src": "smells_like_teen_spirit.mp3",
+            "titulo": "Smells like teen spirit",
+            "autor":"Nirvana",
+            "bola":"18"
+        },{
+            "src": "hello.mp3",
+            "titulo": "Hello",
+            "autor":"Adele",
+            "bola":"1"
+        },
+        {
+            "src": "shiver.mp3",
+            "titulo": "Shiver",
+            "autor":"Coldplay",
+            "bola":"8"
+        },
+        {
+            "src": "heroes.mp3",
+            "titulo": "Heroes",
+            "autor":"David Bowie",
+            "bola":"17"
+        },
+        {
+            "src": "no_vuelvas_mas.mp3",
+            "titulo": "No vuelvas más",
+            "autor":"Darell",
+            "bola":"29"
+        },
+        {
+            "src": "cachete_pechito_y_ombligo.mp3",
+            "titulo": "Cachete, Pechito & Ombligo",
+            "autor":"KING AFRICA",
+            "bola":"11"
+        },
+        {
+            "src": "no_dudaria.mp3",
+            "titulo": "No dudaría",
+            "autor":"Antonio Flores",
+            "bola":"12"
+        },
+        {
+            "src": "sobrevivire.mp3",
+            "titulo": "Sobreviviré",
+            "autor":"Mónica Naranjo",
+            "bola":"7"
+        },
+        {
+            "src": "son_ilusiones.mp3",
+            "titulo": "Son ilusiones",
+            "autor":"Los chichos",
+            "bola":"2"
+        },
+        {
+            "src": "angel_guardian.mp3",
+            "titulo": "Angel guardian",
+            "autor":"ZPU",
+            "bola":"27"
+        },
+        {
+            "src": "painkiller.mp3",
+            "titulo": "Painkiller",
+            "autor":"Judas Priest",
+            "bola":"28"
+        },
+        {
+            "src": "basket_case.mp3",
+            "titulo": "Basket case",
+            "autor":"Green day",
+            "bola":"14"
+        },
+        {
+            "src": "all_star.mp3",
+            "titulo": "All star",
+            "autor":"Smash mouth",
+            "bola":"13"
+        },
+        {
+            "src": "complicated.mp3",
+            "titulo": "Complicated",
+            "autor":"Avril Lavigne",
+            "bola":"4"
+        },
+        {
+            "src": "gangstas_paradise.mp3",
+            "titulo": "Gangsta's paradise",
+            "autor":"Coolio",
+            "bola":"16"
+        },
+        {
+            "src": "wonderwall.mp3",
+            "titulo": "Wonderwall",
+            "autor":"Oasis",
+            "bola":"20"
+        },
+        {
+            "src": "hysteria.mp3",
+            "titulo": "Hysteria",
+            "autor":"Muse",
+            "bola":"23"
+        },
+        {
+            "src": "vamos_a_la_cama.mp3",
+            "titulo": "Vamos a la cama",
+            "autor":"Familia Telerin",
+            "bola":"9"
+        },
+        {
+            "src": "mr_blue_sky.mp3",
+            "titulo": "Mr. Blue Sky",
+            "autor":"Electric Light Orchestra",
+            "bola":"10"
+        },
+        {
+            "src": "loco_contigo.mp3",
+            "titulo": "Loco Contigo",
+            "autor":"J. Balvin",
+            "bola":"6"
+        },
+        {
+            "src": "19_dias_500_noches.mp3",
+            "titulo": "19 días y 500 noches",
+            "autor":"Joaquín Sabina",
+            "bola":"15"
+        },
+        {
+            "src": "somos_los_barrieros.mp3",
+            "titulo": "Somos los barrieros",
+            "autor":"El barrio ",
+            "bola":"25"
+        },
+        {
+            "src": "pan_y_mantequilla.mp3",
+            "titulo": "Pan y Mantequilla",
+            "autor":"Efecto Pasillo",
+            "bola":"5"
+        },
+        {
+            "src": "asereje.mp3",
+            "titulo": "Asereje",
+            "autor":"Las Ketchup",
+            "bola":"21"
+        },
+        {
+            "src": "pisando_fuerte.mp3",
+            "titulo": "Pisando Fuerte",
+            "autor":"Alejandro Sanz",
+            "bola":"3"
+        },
+        {
+            "src": "canalla.mp3",
+            "titulo": "Canalla",
+            "autor":"Romeo Santos",
+            "bola":"30"
+        }
+
+    ],
     "DemoS": [
         {
             "src": "c5.mp3",
