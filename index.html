@@ -352,8 +352,10 @@
             */
             function next() {
             
+                let parar = false
+
                 if (currentSong === songs[bomboSelected].length - 1) {
-                    audio.pause();
+                    parar = true;
                 } else {
                     currentSong++;
                 }
@@ -362,6 +364,11 @@
                 if (!stopEachSong.checked) {
                     audio.play();
                 }
+
+                if(!parar){
+                    audio.pause();
+                }
+
             }
 
             /**
