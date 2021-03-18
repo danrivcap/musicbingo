@@ -31,6 +31,189 @@
             "bola":"4"
         }
     ],
+    "bombo Final": [
+        {
+            "src": "canalla.mp3",
+            "titulo": "Canalla",
+            "autor":"Romeo Santos",
+            "bola":"27"
+        },
+        {
+            "src": "help.mp3",
+            "titulo": "Help!",
+            "autor":"The Beatles",
+            "bola":"9"
+        },
+        {
+            "src": "sobrevivire.mp3",
+            "titulo": "Sobreviviré",
+            "autor":"Mónica Naranjo",
+            "bola":"17""
+        },
+        {
+            "src": "marinero_de_luces.mp3",
+            "titulo": "Marinero de luces",
+            "autor":"Isabel Pantoja",
+            "bola":"28"
+        },
+        {
+             "src": "lambada.mp3",
+            "titulo": "Lambada",
+            "autor":"Kaoma",
+            "bola":"25"
+        },
+		{
+            "src": "fascination_street.mp3",
+            "titulo": "Fascination Street",
+            "autor":"The Cure",
+            "bola":"20"
+        },
+        {
+            "src": "bailar_pegados.mp3",
+            "titulo": "Bailar Pegados",
+            "autor":"Sergio Dalma",
+            "bola":"7"
+        },
+        {
+            "src": "asereje.mp3",
+            "titulo": "Asereje",
+            "autor":"Las ketpchu",
+            "bola":"26"
+        },
+        {
+            "src": "wonderwall.mp3",
+            "titulo": "Wonderwall",
+            "autor":"Oasis",
+            "bola":"18"
+        },
+        {
+            "src": "no_mas.mp3",
+            "titulo": "No mas",
+            "autor":"El Chojin",
+            "bola":"10"
+        },
+        {
+            "src": "sin_pijama.mp3",
+            "titulo": "Sin pijama",
+            "autor":"Becky G",
+            "bola":"1"
+        },
+        {
+            "src": "timber.mp3",
+            "titulo": "Timber",
+            "autor":"Pitbull ft. Ke$ha",
+            "bola":"11"
+        },
+        {
+            "src": "tengo_un_trocito_de_mar.mp3",
+            "titulo": "Tengo un trocito de mar",
+            "autor":"Manuel Carrasco",
+            "bola":"24"
+        },
+        {
+            "src": "my_head_and_my_heart.mp3",
+            "titulo": "My head and my heart",
+            "autor":"Ava Max",
+            "bola":"6"
+        },
+        {
+            "src": "loco_contigo.mp3",
+            "titulo": "Loco Contigo",
+            "autor":"J. Balvin",
+            "bola":"8"
+        },
+        {
+            "src": "vente_pa_ca.mp3",
+            "titulo": "Vente Pa' Ca",
+            "autor":"Ricky Martin",
+            "bola":"16"
+        },
+        {
+            "src": "chiquilla.mp3",
+            "titulo": "Chiquilla",
+            "autor":"Seguridad Social",
+            "bola":"13""
+        },
+        {
+            "src": "seven_nation_army.mp3",
+            "titulo": "Seven nation army",
+            "autor":"The white stripes",
+            "bola":"14"
+        },
+        {
+             "src": "como_una_ola.mp3",
+            "titulo": "Como una ola",
+            "autor":"Rocío Jurado",
+            "bola":"3"
+        },
+        {
+            "src": "back_to_black.mp3",
+            "titulo": "Back to Black",
+            "autor":"Amy Winehouse",
+            "bola":"15"
+        },
+        {
+            "src": "pisando_fuerte.mp3",
+            "titulo": "Pisando Fuerte",
+            "autor":"Alejandro Sanz",
+            "bola":"5"
+        },
+        {
+            "src": "wannabe.mp3",
+            "titulo": "Wannabe",
+            "autor":"Spice girls",
+            "bola":"19"
+        },
+        {
+            "src": "painkiller.mp3",
+            "titulo": "Painkiller",
+            "autor":"Judas Priest",
+            "bola":"22"
+        },
+        {
+            "src": "tu_jardin_con_enanitos.mp3",
+            "titulo": "Tu jardin con enanitos",
+            "autor":"Melendi",
+            "bola":"4"
+        },
+        {
+            "src": "mi_gran_noche.mp3",
+            "titulo": "Mi gran noche",
+            "autor":"Raphael",
+            "bola":"21"
+        },
+        {
+            "src": "somebody_that_i_used_to_know.mp3",
+            "titulo": "Somebody that I used to know",
+            "autor":"Gotye",
+            "bola":"23"
+        },
+        {
+            "src": "esa_chupa_tan_fea.mp3",
+            "titulo": "Esa chupa tan fea",
+            "autor":"Frank T",
+            "bola":"30"
+        },
+        {
+            "src": "love_me_again.mp3",
+            "titulo": "Love me again",
+            "autor":"John Newman",
+            "bola":"29"
+        },
+        {
+            "src": "smells_like_teen_spirit.mp3",
+            "titulo": "Smells like teen spirit",
+            "autor":"Nirvana",
+            "bola":"2"
+        },
+        {
+            "src": "heroes.mp3",
+            "titulo": "Heroes",
+            "autor":"David Bowie",
+            "bola":"12"
+        }
+
+    ],
     "bombo 1": [
         {
             "src": "my_head_and_my_heart.mp3",
